@@ -2,9 +2,8 @@
 
 * {
     margin: 0;
-    
-}
 
+}
 
 @font-face {
     font-display: swap;
@@ -22,22 +21,16 @@
     src: url('./assets/fonts/palanquin-v17-latin-700.woff2') format('woff2');
 }
 
-.pro_tips {
-    background-color: #4EA48733;
-    border-radius: 15px;
-    max-width: fit-content;
+.tip_feature {    
+    padding-top: 65px;
     padding-left: 47px;
+    gap: 30px;
+    align-items: center;
 
-}
-
-.pro_text {
-    color: black;
-    font-family: 'Palanquin', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 120%;
-    padding: 30px;
+    max-width: 1440px;
+    margin-inline: auto;
+    width: 100%;
+    padding-inline: 20px;
 }
 
 .icon-tip {
@@ -57,5 +50,33 @@
     font-size: 28px;
     font-weight: 700;
     font-style: bold;
+
+}
+
+.ordered_list {
+    background-color: #4EA48733;
+    border-radius: 15px;
+    max-width: fit-content;
+    padding-left: 47px;
+
+}
+
+.pro_text {
+    color: black;
+    font-family: 'Palanquin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    padding: 30px;
+}
+
+.pro_text a {
+    color: green;
+    font-family: 'Palanquin', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 24px;
+    line-height: 120%;
 
 }
