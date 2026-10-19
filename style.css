@@ -1,5 +1,10 @@
 /* Seitenübergreifende Styles */
 
+* {
+    margin: 0;
+    
+}
+
 
 @font-face {
     font-display: swap;
@@ -21,15 +26,36 @@
     background-color: #4EA48733;
     border-radius: 15px;
     max-width: fit-content;
+    padding-left: 47px;
 
 }
 
 .pro_text {
     color: black;
-    font-family: 'Palanquin';
+    font-family: 'Palanquin', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;    
+    font-size: 24px;
     line-height: 120%;
     padding: 30px;
+}
+
+.icon-tip {
+    display: flex;
+    gap: 10px;
+    background-color: #4EA487;
+    height: 66px;
+    width: 200px;
+    align-items: center;
+    rotate: -13.67deg;
+    border-radius: 10px;
+}
+
+.icon-tip p {
+    color: #F1C953;
+    font-family: 'Palanquin', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    font-style: bold;
+
 }
