@@ -96,6 +96,8 @@ body {
 }
 
 header {
+    height: 128px;
+
     display: flex;
     align-items: center;
     gap: 100px;
