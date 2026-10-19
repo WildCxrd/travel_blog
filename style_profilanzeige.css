@@ -31,7 +31,7 @@
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 16px;
     box-sizing: border-box;
 }
 
@@ -92,15 +92,6 @@ body {
     font-size: 1rem;
     color: rgba(84, 55, 13, 1);
 }
-
-
-
-
-
-
-
-
-
 
 .author-card {
     display: flex;
