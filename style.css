@@ -75,7 +75,7 @@
     background-color: rgba(78, 164, 135, 1);
 }
 
-/* Element selectors */
+/* ELEMENT SELECTORS */
 
 * {
     margin: 0;
@@ -141,7 +141,7 @@ footer figure {
     gap: 4px;
 }
 
-/* Classes */
+/* CLASSES */
 
 .blog-logo {
     height: 72px;
