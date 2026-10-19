@@ -21,7 +21,8 @@
     src: url('./assets/fonts/palanquin-v17-latin-700.woff2') format('woff2');
 }
 
-.tip_feature {    
+/* ------------------------------------------------------------pro tip code start [MBE]-------------------------------------- */
+.tip_feature {
     padding-top: 65px;
     padding-left: 47px;
     gap: 30px;
@@ -50,7 +51,6 @@
     font-size: 28px;
     font-weight: 700;
     font-style: bold;
-
 }
 
 .ordered_list {
@@ -58,7 +58,6 @@
     border-radius: 15px;
     max-width: fit-content;
     padding-left: 47px;
-
 }
 
 .pro_text {
@@ -78,5 +77,6 @@
     font-style: bold;
     font-size: 24px;
     line-height: 120%;
-
 }
+
+/* ------------------------------------------------------------pro tip code end [MBE]--------------------------------------------------------------------- */
