@@ -35,6 +35,9 @@
 }
 
 .icon-tip {
+    position: absolute;
+    left: 2.385%;
+    top: 1.615%;
     display: flex;
     gap: 10px;
     background-color: #4EA487;
@@ -43,6 +46,7 @@
     align-items: center;
     rotate: -13.67deg;
     border-radius: 10px;
+    
 }
 
 .icon-tip p {
