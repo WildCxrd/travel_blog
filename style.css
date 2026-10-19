@@ -1,1 +1,179 @@
 /* Seitenübergreifende Styles */
+
+/* FONTS */
+
+/* arima-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/arima-v7-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* arima-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./assets/fonts/arima-v7-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* arima-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./assets/fonts/arima-v7-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+/* palanquin-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/palanquin-v17-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* palanquin-500 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 500;
+    src: url('./assets/fonts/palanquin-v17-latin-500.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* palanquin-700 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./assets/fonts/palanquin-v17-latin-700.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* COLORS */
+
+.primary-green-background {
+    background-color: rgba(78, 164, 135, 1);
+}
+
+/* Element selectors */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+    padding: 60px 120px;
+}
+
+header a {
+    font-family: 'Arima';
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    color: white;
+}
+
+nav>ul {
+    display: flex;
+    gap: 72px;
+
+    padding-inline-start: 0;
+}
+
+footer {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 60px 120px;
+}
+
+footer p {
+    font-family: 'Palanquin';
+    font-size: 1.125rem;
+
+    color: white;
+}
+
+footer figure {
+    display: flex;
+    gap: 4px;
+}
+
+/* Classes */
+
+.blog-logo {
+    height: 72px;
+    width: 72px;
+}
+
+.footer-panel {
+    width: 100dvw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meta-informations>ul {
+    display: flex;
+    gap: 72px;
+
+    padding-inline-start: 0;
+}
+
+.social-media-icons>ul {
+    display: flex;
+    gap: 16px;
+
+    padding-inline-start: 0;
+}
+
+.social-media-icon-rectangular {
+    height: 32px;
+    width: 32px;
+}
+
+.youtube-icon {
+    height: 32px;
+    width: 44px;
+}
