@@ -1,0 +1,141 @@
+/* Seitenübergreifende Styles */
+
+
+@font-face {
+    font-family: 'Arima';
+    src: url('./assets/fonts/arima-v7-latin-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arima';
+    src: url('./assets/fonts/arima-v7-latin-700.woff2') format('woff2');
+    font-weight: 700;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Palanquin';
+    src: url('./assets/fonts/palanquin-v17-latin-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Palanquin';
+    src: url('./assets/fonts/palanquin-v17-latin-600.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Palanquin';
+}
+
+.main-content {
+    padding: 80px max(calc(50% - 600px), 120px);
+}
+
+.article-intro {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.article-title {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 902px;
+}
+
+.title-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.subtitle {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: rgba(78, 164, 135, 1);
+}
+
+.article-title h1 {
+    font-family: 'Arima';
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgba(241, 201, 83, 1);
+}
+
+.intro-text {
+    font-size: 1.75rem;
+    color: rgba(84, 55, 13, 1);
+}
+
+.article-info {
+    display: flex;
+    gap: 32px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 1rem;
+    color: rgba(84, 55, 13, 1);
+}
+
+
+
+
+
+
+
+
+
+
+.author-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 272px;
+    height: fit-content;
+    padding: 16px;
+    border-radius: 30px;
+    background-color: rgba(78, 164, 135, 0.2);
+    color: rgba(84, 55, 13, 1);
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+}
+
+.author-name-box {
+    text-align: center;
+}
+
+.author-name {
+    font-family: 'Arima';
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.author-role {
+    font-family: 'Arima';
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.author-text {
+    font-size: 1rem;
+}
