@@ -11,6 +11,12 @@
     width: 40px;
 }
 
+@media screen and (min-width: 800px) {
+    .menu-bar {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 320px) {
     .menu-bar>ul {
         justify-content: space-between;

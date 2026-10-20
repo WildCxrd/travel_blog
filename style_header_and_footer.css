@@ -6,11 +6,6 @@
 
 /* ELEMENT SELECTORS */
 
-body {
-    display: flex;
-    flex-direction: column;
-}
-
 header {
     display: flex;
     align-items: center;
