@@ -1,6 +1,6 @@
 /* Bauteilspezifische css page für 2 und 3 */
 
-* {
+ {
     margin: 0;
     box-sizing: border-box;
 
@@ -21,10 +21,6 @@
     font-weight: 700;
     src: url('./assets/fonts/palanquin-v17-latin-700.woff2') format('woff2');
 }
-
-
-
-
 
 
 .tip_feature {   
