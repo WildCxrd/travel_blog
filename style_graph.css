@@ -1,0 +1,168 @@
+/* Article 03 / Graph – Gerüst nach dem Design Guide Desktop
+   Schriften (@font-face), * und body stehen in style_profilanzeige.css
+   Header + Footer volle Breite, Inhalt max. 1440 px */
+
+
+/* ===== 1. HEADER ===== */
+.header {
+    /* volle Breite, grüner Hintergrund */
+}
+
+.header-content {
+    /* Contentbegrenzung max. 1440 px, Logo links, Navigation rechts */
+}
+
+.header-content>img {
+    /* Logo */
+}
+
+.nav-bar ul {
+    /* 3 Links nebeneinander: Highlights, FAQ, Contact */
+}
+
+.nav-bar a {
+    /* Schrift und Farbe der Links */
+}
+
+.nav-bar a:hover {
+    /* Hover-Effekt */
+}
+
+
+/* ===== Hauptbereich ===== */
+.main-content {
+    /* Contentbegrenzung max. 1440 px, Abstand zwischen den Bereichen */
+}
+
+.content-section {
+    /* gilt für alle Sektionen */
+}
+
+
+/* ===== 2. ARTICLE INTRO ===== */
+/* Styles stehen schon in style_profilanzeige.css:
+   .article-intro, .article-title, .title-text, .subtitle, .article-title h1,
+   .intro-text, .article-info, .info-item, .author-card, .avatar,
+   .author-name-box, .author-name, .author-role, .author-text */
+
+
+/* ===== 3. TEXTBLÖCKE ===== */
+.text-block {
+    /* div um den Fließtext zwischen den Sektionen (kommt 3x vor), Abstand zwischen den 2 Absätzen */
+}
+
+.text-block>p {
+    /* Fließtext: Schrift, Größe, Farbe */
+}
+
+
+/* ===== 4. CHART SECTION (Rain periods in Pattaya) ===== */
+.chart-section {
+    /* Überschrift über der Grafik, beides mittig */
+}
+
+.chart-section>h2 {
+    /* Überschrift */
+}
+
+.chart {
+    /* Grafik: Breite, abgerundete Ecken, Schatten (gilt auch für die Grafiken in .column) */
+}
+
+
+/* ===== 5. ZWEI SPALTEN (Beach activities / Accommodation) ===== */
+.two-columns {
+    /* zwei Spalten nebeneinander */
+}
+
+.column {
+    /* eine Spalte: h2, Text, Grafik untereinander */
+}
+
+.column>h2 {
+    /* Überschrift der Spalte */
+}
+
+.column>p {
+    /* Text der Spalte */
+}
+
+.column>.chart {
+    /* Grafik in der Spalte */
+}
+
+
+/* ===== 6. SHARE ===== */
+.share-section {
+    /* Text oben, darunter Pfeil + Button */
+}
+
+.share-section>p {
+    /* „Follow me for more content …“ */
+}
+
+.share-section>img {
+    /* Pfeil */
+}
+
+.share-button {
+    /* Button-Link: Icon + Text */
+}
+
+.share-button:hover {
+    /* Hover-Effekt */
+}
+
+.share-button>img {
+    /* Share-Icon */
+}
+
+.share-button>span {
+    /* Text „Share“ */
+}
+
+
+/* ===== 7. FOOTER ===== */
+.footer {
+    /* volle Breite, grüner Hintergrund */
+}
+
+.footer-content {
+    /* Contentbegrenzung max. 1440 px, links Copyright + Links, rechts Icons */
+}
+
+.footer-content>p {
+    /* © Travel Blog 2026 */
+}
+
+.footer-links {
+    /* Impressum, Cookie Preferences */
+}
+
+.footer-links>a {
+    /* Schrift und Farbe der Links */
+}
+
+.footer-icons {
+    /* 4 Social-Icons nebeneinander */
+}
+
+.footer-icons>a {
+    /* Link um das Icon */
+}
+
+.footer-icons img {
+    /* Icon-Größe */
+}
+
+
+/* ===== TABLET bis 1280 px (Handy-Regeln weiter unten überschreiben) ===== */
+@media screen and (max-width: 1280px) {
+
+}
+
+
+/* ===== HANDY bis 767 px ===== */
+@media screen and (max-width: 767px) {
+
+}
