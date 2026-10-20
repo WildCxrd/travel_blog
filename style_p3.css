@@ -1,15 +1,23 @@
 
-
-
-#video-container{
+*{
+    margin: 0;
+}
+#video-container {
     display: flex;
     width: 900px;
     height: 520px;
     margin: 0 auto;
-}
+    border: 80px;
+ }
 
-#video-container iframe{
+#video-container iframe {
     border: none;
     border-radius: 53px;
+    padding: 137px 377px 137px 377;
 }
 
+.landing-section img{
+    height: 100px;
+    width:100px;
+    
+}
