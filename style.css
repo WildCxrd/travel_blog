@@ -68,9 +68,27 @@
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+/* COLORS */
+
+.yellow-background {
+    background-color: rgba(241, 201, 83, 1);
+}
+
 /* ELEMENT SELECTORS */
 
 * {
     margin: 0;
     box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    padding-inline-start: 0;
+}
+
+li {
+    list-style: none;
 }

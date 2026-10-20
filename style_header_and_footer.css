@@ -6,14 +6,6 @@
 
 /* ELEMENT SELECTORS */
 
-li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
 body {
     display: flex;
     flex-direction: column;
@@ -40,8 +32,6 @@ header a {
 nav>ul {
     display: flex;
     gap: 72px;
-
-    padding-inline-start: 0;
 }
 
 footer {
