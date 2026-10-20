@@ -1,10 +1,6 @@
-/* Bauteilspezifische css page für 2 und 3 */
 
- {
-    margin: 0;
-    box-sizing: border-box;
 
-}
+ 
 
 @font-face {
     font-display: swap;
@@ -82,4 +78,3 @@
     text-decoration: none;
 }
 
-/* ------------------------------------------------------------pro tip code end [MBE]--------------------------------------------------------------------- */
