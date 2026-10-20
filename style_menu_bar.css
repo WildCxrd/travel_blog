@@ -1,0 +1,25 @@
+.menu-bar>ul {
+    display: flex;
+    justify-content: center;
+    gap: 48px;
+
+    padding: 24px;
+}
+
+.menu-bar img {
+    height: 40px;
+    width: 40px;
+}
+
+@media screen and (min-width: 800px) {
+    .menu-bar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .menu-bar>ul {
+        justify-content: space-between;
+        gap: unset;
+    }
+}
