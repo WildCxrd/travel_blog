@@ -1,5 +1,6 @@
 /* Article 03 / Graph – Gerüst nach dem Design Guide Desktop
-   Schriften (@font-face), * und body stehen in style_profilanzeige.css
+   Schriften (@font-face), * , body und .main-content stehen in style_profilanzeige.css
+   (wird im HTML zuerst geladen, diese Datei danach)
    Header + Footer volle Breite, Inhalt max. 1440 px */
 
 
@@ -30,9 +31,8 @@
 
 
 /* ===== Hauptbereich ===== */
-.main-content {
-    /* Contentbegrenzung max. 1440 px, Abstand zwischen den Bereichen */
-}
+/* .main-content steht in style_profilanzeige.css (gilt für alle Seiten).
+   Abstand zwischen den Bereichen dort ergänzen, nicht hier ein zweites Mal. */
 
 .content-section {
     /* gilt für alle Sektionen */
@@ -66,7 +66,8 @@
 }
 
 .chart {
-    /* Grafik: Breite, abgerundete Ecken, Schatten (gilt auch für die Grafiken in .column) */
+    /* Grafik: Breite, abgerundete Ecken (gilt auch für die Grafiken in .column).
+       Schatten aus Figma braucht box-shadow: noch nicht gelernt, Mentor fragen */
 }
 
 

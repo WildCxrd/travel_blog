@@ -6,37 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graph</title>
 
-    <link rel="stylesheet" href="style_graph.css">
     <link rel="stylesheet" href="style_profilanzeige.css">
+    <link rel="stylesheet" href="style_graph.css">
 
 </head>
 
 
 <body>
-    <!-- 1. HEADER -->
-    <header class="header">
-        <div class="header-content">
-            <img src="./assets/img/logo.png" alt="Travel Blog Logo">
-            <nav class="nav-bar">
-                <ul>
-                    <li>
-                        <a href="./index.html#highlights">Highlights</a>
-                    </li>
-                    <li>
-                        <a href="./index.html#faq">FAQ</a>
-                    </li>
-                    <li>
-                        <a href="./index.html#contact">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+    /* Header */
+
+    <header class="primary-green-background">
+        <img class="blog-logo" src="./assets/icons/logo.svg"
+            alt="Das Logo des Travel Blog - die Erdkugel, die von einem Flugzeug gegen der Uhrzeigersinn umkreist wird.">
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Highlights</a>
+                </li>
+                <li>
+                    <a href="">FAQ</a>
+                </li>
+                <li>
+                    <a href="">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
 
     <main class="main-content">
 
-        <!-- 2. ARTICLE INTRO -->
+        /* Title Card / Article Intro */
         <section class="content-section article-intro">
             <div class="article-title">
                 <div class="title-text">
@@ -65,6 +66,8 @@
                     </div>
                 </div>
             </div>
+
+
             <aside class="author-card">
                 <img class="avatar" src="./assets/img/avatar.png" alt="Portrait of Tamara Wallker">
                 <div class="author-name-box">
@@ -75,9 +78,11 @@
                     by snakes, love sharks, would happily spend weeks deep in the jungle, and can never get enough
                     papaya. As long as there’s a next destination, I know I’m exactly where I’m meant to be.</p>
             </aside>
+
+
         </section>
 
-        <!-- 3. TEXTBLOCK 1 -->
+        /* Textblock 1 */
         <div class="text-block">
             <p>Experience the vibrant energy of Pattaya, where golden beaches, delicious street food and lively
                 promenades create the perfect tropical escape. Explore colorful markets, cultural landmarks and
@@ -87,13 +92,13 @@
             </p>
         </div>
 
-        <!-- 4. CHART SECTION -->
+        /* Chart Selection */
         <section class="content-section chart-section">
             <h2>Rain periods in Pattaya</h2>
             <img class="chart" src="./assets/img/graph-rain-periods.png" alt="Chart of the rain periods in Pattaya">
         </section>
 
-        <!-- 3. TEXTBLOCK 2 -->
+        /* Textblock 2 */
         <div class="text-block">
             <p>Pattaya’s rainy season usually lasts from May to October, with September and October often bringing the
                 heaviest rainfall. Showers can be intense but are usually short, leaving plenty of time to enjoy the
@@ -103,7 +108,7 @@
                 the rainy season an interesting time to discover Pattaya.</p>
         </div>
 
-        <!-- 5. ZWEI SPALTEN -->
+        /* Beach activities · Accommodation */
         <section class="content-section two-columns">
             <div class="column">
                 <h2>Popular beach activities</h2>
@@ -117,16 +122,19 @@
                 <img class="chart" src="./assets/img/graph-beach-activities.png"
                     alt="Pie chart of popular beach activities in Pattaya">
             </div>
+
+
             <div class="column">
                 <h2>Accommodation expenses</h2>
-                <p>Dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque
-                    turpis gravida semper.</p>
+                <p>Accommodation expenses vary depending on location, comfort and season. Pattaya offers everything from
+                    affordable hostels and guesthouses to modern hotels and luxurious beachfront resorts.</p>
                 <img class="chart" src="./assets/img/graph-accommodation.png"
                     alt="Bar chart of accommodation expenses per night in Pattaya">
             </div>
         </section>
 
-        <!-- 3. TEXTBLOCK 3 -->
+        /*== Textblock 3 ==*/
+
         <div class="text-block">
             <p>Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta
                 scelerisque turpis gravida semper.</p>
@@ -134,7 +142,6 @@
                 ipsum dolor sit amet consectetur.</p>
         </div>
 
-        <!-- 6. SHARE -->
         <section class="content-section share-section">
             <p>Follow me for more content like this, and share the article with your friends!</p>
             <img src="./assets/icons/arrow.svg" alt="">
@@ -146,28 +153,53 @@
 
     </main>
 
+    /* Footer */
 
-    <!-- 7. FOOTER -->
-    <footer class="footer">
-        <div class="footer-content">
-            <p><img src="./assets/icons/copyright.svg" alt=""> Travel Blog 2026</p>
-            <div class="footer-links">
-                <a href="#">Imprint</a>
-                <a href="#">Cookie Preferences</a>
+    <footer class="primary-green-background">
+        <div class="footer-panel">
+            <div class="meta-informations">
+                <ul>
+                    <li class="copyright-li">
+                        <figure>
+                            <img src="./assets/icons/copyright.svg" alt="Das Copyright-Logo">
+                            <p>Travel Blog 2026</p>
+                        </figure>
+                    </li>
+                    <li>
+                        <p>Imprint</p>
+                    </li>
+                    <li>
+                        <p>Cookie Preferences</p>
+                    </li>
+                </ul>
             </div>
-            <div class="footer-icons">
-                <a href="https://www.tiktok.com" target="_blank">
-                    <img src="./assets/icons/tiktok.svg" alt="TikTok">
-                </a>
-                <a href="https://www.youtube.com" target="_blank">
-                    <img src="./assets/icons/youtube.svg" alt="YouTube">
-                </a>
-                <a href="https://www.facebook.com" target="_blank">
-                    <img src="./assets/icons/facebook.svg" alt="Facebook">
-                </a>
-                <a href="https://www.instagram.com" target="_blank">
-                    <img src="./assets/icons/instagram.svg" alt="Instagram">
-                </a>
+
+            <div class="social-media-icons">
+                <ul>
+                    <li>
+                        <a href="https://www.tiktok.com/" target="_blank">
+                            <img class="social-media-icon-rectangular" src="./assets/icons/tiktok.svg"
+                                alt="Das TikTok-Logo.">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <img class="youtube-icon" src="./assets/icons/youtube.svg" alt="Das YouTube-Logo.">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <img class="social-media-icon-rectangular" src="./assets/icons/facebook.svg"
+                                alt="Das Facebook-Logo.">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <img class="social-media-icon-rectangular" src="./assets/icons/instagram.svg"
+                                alt="Das Instagram-Logo.">
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
     </footer>

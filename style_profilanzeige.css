@@ -10,6 +10,20 @@
 
 @font-face {
     font-family: 'Arima';
+    src: url('./assets/fonts/arima-v7-latin-500.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arima';
+    src: url('./assets/fonts/arima-v7-latin-600.woff2') format('woff2');
+    font-weight: 600;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Arima';
     src: url('./assets/fonts/arima-v7-latin-700.woff2') format('woff2');
     font-weight: 700;
     font-display: swap;
@@ -133,4 +147,59 @@ body {
 
 .author-text {
     font-size: 1rem;
+}
+
+
+/*== TABLET bis 1280 px: Hauptbereich + Article Intro ==*/
+@media screen and (max-width: 1280px) {
+
+    .main-content {
+        padding: 80px 48px;
+    }
+
+    .article-intro {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .article-info {
+        flex-wrap: wrap;
+    }
+
+    .author-card {
+        width: 100%;
+    }
+}
+
+
+/*== HANDY bis 767 px: Hauptbereich + Article Intro ==*/
+@media screen and (max-width: 767px) {
+
+    .main-content {
+        padding: 40px 16px;
+    }
+
+    .article-title {
+        gap: 24px;
+    }
+
+    .subtitle {
+        font-size: 1.25rem;
+    }
+
+    .article-title h1 {
+        font-size: 2rem;
+    }
+
+    .intro-text {
+        font-size: 1.125rem;
+    }
+
+    .article-info {
+        gap: 16px;
+    }
+
+    .info-item {
+        width: 45%;
+    }
 }
