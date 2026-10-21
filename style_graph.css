@@ -39,11 +39,96 @@
 }
 
 
-/* ===== 2. ARTICLE INTRO ===== */
-/* Styles stehen schon in style_profilanzeige.css:
-   .article-intro, .article-title, .title-text, .subtitle, .article-title h1,
-   .intro-text, .article-info, .info-item, .author-card, .avatar,
-   .author-name-box, .author-name, .author-role, .author-text */
+/* ===== 2. ARTICLE INTRO (aus style_profilanzeige.css übernommen) ===== */
+.article-intro {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.article-title {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: calc(100% - 296px);
+    max-width: 902px;
+}
+
+.title-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.subtitle {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: rgba(78, 164, 135, 1);
+}
+
+.article-title h1 {
+    font-family: 'Arima';
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgba(241, 201, 83, 1);
+}
+
+.intro-text {
+    font-size: 1.75rem;
+    color: rgba(84, 55, 13, 1);
+}
+
+.article-info {
+    display: flex;
+    gap: 32px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 1rem;
+    color: rgba(84, 55, 13, 1);
+}
+
+/* Autor-Karte */
+.author-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 272px;
+    height: fit-content;
+    padding: 16px;
+    border-radius: 30px;
+    background-color: rgba(78, 164, 135, 0.2);
+    color: rgba(84, 55, 13, 1);
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+}
+
+.author-name-box {
+    text-align: center;
+}
+
+.author-name {
+    font-family: 'Arima';
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.author-role {
+    font-family: 'Arima';
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.author-text {
+    font-size: 1rem;
+}
 
 
 /* ===== 3. TEXTBLÖCKE ===== */
@@ -160,10 +245,73 @@
 /* ===== TABLET bis 1280 px (Handy-Regeln weiter unten überschreiben) ===== */
 @media screen and (max-width: 1280px) {
 
+    /* 2. Article Intro: Titel und Autor-Karte untereinander */
+    .article-intro {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .article-title {
+        width: 100%;
+    }
+
+    .article-info {
+        flex-wrap: wrap;
+    }
+
+    .author-card {
+        width: 100%;
+    }
+
+    .author-text {
+        text-align: center;
+    }
 }
 
 
 /* ===== HANDY bis 767 px ===== */
 @media screen and (max-width: 767px) {
 
+    /* 2. Article Intro
+       min(): höchstens der Figma-Wert (bei 375 px). Unter 375 px wird alles
+       im gleichen Verhältnis kleiner, damit die Zeilen wie in Figma umbrechen. */
+    .article-title {
+        gap: 24px;
+    }
+
+    .subtitle {
+        font-size: min(1.25rem, 5.33vw);
+    }
+
+    .article-title h1 {
+        font-size: min(2.5rem, 10.66vw);
+    }
+
+    .intro-text {
+        font-size: min(1.125rem, 4.8vw);
+    }
+
+    .article-info {
+        gap: min(16px, 4.26vw);
+    }
+
+    .info-item {
+        font-size: min(1rem, 4.26vw);
+    }
+
+    .author-card {
+        padding: 16px min(8px, 2.13vw);
+    }
+
+    .author-name {
+        font-size: min(1rem, 4.26vw);
+    }
+
+    .author-role {
+        font-size: min(1rem, 4.26vw);
+    }
+
+    .author-text {
+        font-size: min(1rem, 4.26vw);
+    }
 }
