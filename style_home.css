@@ -6,6 +6,34 @@
     background-size: cover;
 }
 
+.hero-title {
+    width: 345px;
+
+    color: rgba(84, 55, 13, 1);
+
+    position: absolute;
+    top: 250px;
+    left: 100px;
+}
+
+.hero-title>h2 {
+    font-family: 'Arima';
+    font-weight: bold;
+    font-size: 3.75rem;
+}
+
+.hero-title>p {
+    font-family: 'Paranquin';
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.cappadonia-circle {
+    position: absolute;
+    top: 420px;
+    left: 430px;
+}
+
 .home-highlights {
     display: flex;
     flex-direction: column;
@@ -16,6 +44,11 @@
 }
 
 .highlights-headline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
     font-family: 'Arima';
     color: rgba(78, 164, 135, 1);
 
@@ -29,3 +62,17 @@
 }
 
 .home-faq {}
+
+@media screen and (max-width: 800px) {
+    .hero-title {
+        display: none;
+    }
+
+    .cappadonia-circle {
+        height: 160px;
+        width: 160px;
+
+        top: 200px;
+        left: 75px;
+    }
+}
