@@ -188,6 +188,10 @@
     letter-spacing: 0.05em;
 }
 
+.tip_feature .pro_text > li {
+    list-style-type: decimal;
+    list-style-position: outside;
+}
 
 
 
