@@ -1,0 +1,171 @@
+/* COLORS */
+
+.primary-green-background {
+    background-color: rgba(78, 164, 135, 1);
+}
+
+/* ELEMENT SELECTORS */
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+
+    padding: 32px max(calc(50% - 720px), 120px);
+}
+
+header a {
+    font-family: 'Arima';
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    color: white;
+}
+
+nav>ul {
+    display: flex;
+    gap: 72px;
+}
+
+footer {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 60px max(calc(50% - 720px), 120px);
+    margin-bottom: 92px;
+}
+
+footer p {
+    font-family: 'Palanquin';
+    font-size: 1.125rem;
+
+    color: white;
+}
+
+footer figure {
+    display: flex;
+    gap: 4px;
+}
+
+/* CLASSES */
+
+.blog-logo {
+    height: 72px;
+    width: 72px;
+}
+
+.footer-panel {
+    width: 100dvw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.meta-informations {
+    display: flex;
+}
+
+.meta-informations>ul {
+    display: flex;
+    gap: 72px;
+
+    padding-inline-start: 0;
+}
+
+.social-media-icons>ul {
+    display: flex;
+    gap: 16px;
+
+    padding-inline-start: 0;
+}
+
+.social-media-icon-rectangular {
+    height: 32px;
+    width: 32px;
+}
+
+.youtube-icon {
+    height: 32px;
+    width: 44px;
+}
+
+/* MEDIA SCREENS */
+
+@media screen and (max-width: 990px) {
+    footer p {
+        font-size: 1rem;
+    }
+
+    .footer-panel {
+        align-items: end;
+    }
+
+    .meta-informations>ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .copyright-li {
+        order: 4;
+    }
+
+    .social-media-icons {
+        align-items: flex-end;
+    }
+
+    .social-media-icon-rectangular {
+        height: 24px;
+        width: 24px;
+    }
+
+    .youtube-icon {
+        height: 24px;
+        width: 33px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    footer {
+        margin-bottom: unset;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        justify-content: center;
+
+        padding: 5px 16px;
+    }
+
+    header>nav {
+        display: none;
+    }
+
+    .blog-logo {
+        height: 56px;
+        width: 56px;
+    }
+
+    footer {
+        padding: 30px 24px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .social-media-icons>ul {
+        gap: 4px;
+    }
+
+    .social-media-icon-rectangular {
+        height: 18px;
+        width: 18px;
+    }
+
+    .youtube-icon {
+        height: 18px;
+        width: 27px;
+    }
+}

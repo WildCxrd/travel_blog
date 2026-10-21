@@ -1,0 +1,76 @@
+@font-face {
+    font-display: swap;
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/palanquin-v17-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Palanquin';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./assets/fonts/palanquin-v17-latin-700.woff2') format('woff2');
+}
+
+
+.tip_feature {   
+    position: relative;
+    padding-top: 65px;       
+    
+    align-items: center;
+    max-width: 1440px;
+    margin-inline: auto;
+    width: 100%;   
+}
+
+.icon-tip {   
+    display: flex;
+    gap: 10px;
+    background-color: #4EA487;
+    height: 66px;
+    width: 200px;
+    align-items: center;
+    rotate: -13.67deg;
+    border-radius: 10px;
+    position: relative;
+    bottom: -30px;
+    left: -30px;
+}
+
+.icon-tip p {
+    color: #F1C953;
+    font-family: 'Palanquin', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    font-style: bold;
+}
+
+.ordered_list {
+    background-color: #4EA48733;
+    border-radius: 15px;
+    max-width: fit-content;
+    padding-left: 47px;
+}
+
+.pro_text {
+    color: black;
+    font-family: 'Palanquin', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 120%;
+    padding: 30px;
+}
+
+.pro_text a {
+    color: green;
+    font-family: 'Palanquin', sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 24px;
+    line-height: 120%;
+    text-decoration: none;
+}
+
