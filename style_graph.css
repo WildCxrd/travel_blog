@@ -1,42 +1,13 @@
-/* Article 03 / Graph – Gerüst nach dem Design Guide Desktop
-   Schriften (@font-face), * , body und .main-content stehen in style_profilanzeige.css
-   (wird im HTML zuerst geladen, diese Datei danach)
-   Header + Footer volle Breite, Inhalt max. 1440 px */
-
-
-/* ===== 1. HEADER ===== */
-.header {
-    /* volle Breite, grüner Hintergrund */
-}
-
-.header-content {
-    /* Contentbegrenzung max. 1440 px, Logo links, Navigation rechts */
-}
-
-.header-content>img {
-    /* Logo */
-}
-
-.nav-bar ul {
-    /* 3 Links nebeneinander: Highlights, FAQ, Contact */
-}
-
-.nav-bar a {
-    /* Schrift und Farbe der Links */
-}
-
-.nav-bar a:hover {
-    /* Hover-Effekt */
-}
 
 
 /* ===== Hauptbereich ===== */
-/* .main-content steht in style_profilanzeige.css (gilt für alle Seiten).
-   Abstand zwischen den Bereichen dort ergänzen, nicht hier ein zweites Mal. */
 
-.content-section {
-    /* gilt für alle Sektionen */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
 }
+
 
 
 /* ===== 2. ARTICLE INTRO (aus style_profilanzeige.css übernommen) ===== */
@@ -132,113 +103,34 @@
 
 
 /* ===== 3. TEXTBLÖCKE ===== */
-.text-block {
-    /* div um den Fließtext zwischen den Sektionen (kommt 3x vor), Abstand zwischen den 2 Absätzen */
-}
 
 .text-block>p {
-    /* Fließtext: Schrift, Größe, Farbe */
+    font-size: 1.5rem;
+    color: rgba(61, 61, 61, 1);
 }
 
 
 /* ===== 4. CHART SECTION (Rain periods in Pattaya) ===== */
 .chart-section {
-    /* Überschrift über der Grafik, beides mittig */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
 }
 
 .chart-section>h2 {
-    /* Überschrift */
+    font-family: 'Arima';
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgba(84, 55, 13, 1);
+    text-align: center;
 }
 
+/* Grafik */
 .chart {
-    /* Grafik: Breite, abgerundete Ecken (gilt auch für die Grafiken in .column).
-       Schatten aus Figma braucht box-shadow: noch nicht gelernt, Mentor fragen */
-}
-
-
-/* ===== 5. ZWEI SPALTEN (Beach activities / Accommodation) ===== */
-.two-columns {
-    /* zwei Spalten nebeneinander */
-}
-
-.column {
-    /* eine Spalte: h2, Text, Grafik untereinander */
-}
-
-.column>h2 {
-    /* Überschrift der Spalte */
-}
-
-.column>p {
-    /* Text der Spalte */
-}
-
-.column>.chart {
-    /* Grafik in der Spalte */
-}
-
-
-/* ===== 6. SHARE ===== */
-.share-section {
-    /* Text oben, darunter Pfeil + Button */
-}
-
-.share-section>p {
-    /* „Follow me for more content …“ */
-}
-
-.share-section>img {
-    /* Pfeil */
-}
-
-.share-button {
-    /* Button-Link: Icon + Text */
-}
-
-.share-button:hover {
-    /* Hover-Effekt */
-}
-
-.share-button>img {
-    /* Share-Icon */
-}
-
-.share-button>span {
-    /* Text „Share“ */
-}
-
-
-/* ===== 7. FOOTER ===== */
-.footer {
-    /* volle Breite, grüner Hintergrund */
-}
-
-.footer-content {
-    /* Contentbegrenzung max. 1440 px, links Copyright + Links, rechts Icons */
-}
-
-.footer-content>p {
-    /* © Travel Blog 2026 */
-}
-
-.footer-links {
-    /* Impressum, Cookie Preferences */
-}
-
-.footer-links>a {
-    /* Schrift und Farbe der Links */
-}
-
-.footer-icons {
-    /* 4 Social-Icons nebeneinander */
-}
-
-.footer-icons>a {
-    /* Link um das Icon */
-}
-
-.footer-icons img {
-    /* Icon-Größe */
+    width: min(640px, 100%);
+    border-radius: 53px;
+    box-shadow: -2px 4px 11.6px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -265,6 +157,16 @@
 
     .author-text {
         text-align: center;
+    }
+
+    /* 3. Textblöcke */
+    .text-block>p {
+        font-size: 1.25rem;
+    }
+
+    /* 4. Chart Section */
+    .chart-section>h2 {
+        font-size: 1.75rem;
     }
 }
 
@@ -313,5 +215,28 @@
 
     .author-text {
         font-size: min(1rem, 4.26vw);
+    }
+
+    /* Abstand zwischen den Bereichen */
+    .main-content {
+        gap: 40px;
+    }
+
+    /* 3. Textblöcke */
+    .text-block>p {
+        font-size: min(1rem, 4.26vw);
+    }
+
+    /* 4. Chart Section */
+    .chart-section {
+        gap: 16px;
+    }
+
+    .chart-section>h2 {
+        font-size: min(1.25rem, 5.33vw);
+    }
+
+    .chart {
+        border-radius: min(24px, 6.4vw);
     }
 }
