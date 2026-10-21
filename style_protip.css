@@ -34,7 +34,9 @@
     align-items: center;
     rotate: -13.67deg;
     border-radius: 10px;
-   
+    position: relative;
+    bottom: -30px;
+    left: -30px;
 }
 
 .icon-tip p {
