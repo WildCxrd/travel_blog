@@ -34,6 +34,7 @@ footer {
     justify-content: space-between;
 
     padding: 60px max(calc(50% - 720px), 120px);
+    margin-bottom: 92px;
 }
 
 footer p {
@@ -123,6 +124,12 @@ footer figure {
     .youtube-icon {
         height: 24px;
         width: 33px;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    footer {
+        margin-bottom: unset;
     }
 }
 
