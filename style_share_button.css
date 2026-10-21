@@ -36,6 +36,11 @@ section>p {
     gap: 50px;
 }
 
+
+.image1 {
+    display: none;
+}
+
 .button {
     height: 45px;
     border-radius: 40px;
@@ -67,7 +72,7 @@ section>p {
     letter-spacing: 5%;
 }
 
-@media screen and (min-width: 375px) and (max-width: 1439px) {
+@media screen and (min-width: 320px) and (max-width: 1439px) {
 
     section>p {
         width: 341px;
@@ -75,13 +80,33 @@ section>p {
     }
 
     .share-row {
-        width: 341px;
+        width: 320px;
     }
 
     .share-row>img {
-        width: 50px;
-        height: 30px;
         rotate: 0grad;
     }
 
+}
+
+@media screen (min-width:1440) {
+
+    .image1 {
+        display: none;
+    }
+
+    .image {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width: 1439px) {
+    .image {
+        display: none;
+    }
+
+    .image1 {
+        display: block;
+    }
 }
