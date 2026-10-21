@@ -36,15 +36,17 @@
         </header>
 
         <section class="home-hero">
-            <div class="hero-title">
-                <h2>Cappadocia</h2>
-                <p>From sunrise balloons to hidden cave dwellings, every moment feels unreal in the best way.</p>
+            <div class="hero-content">
+                <div class="hero-title">
+                    <h2>Cappadocia</h2>
+                    <p>From sunrise balloons to hidden cave dwellings, every moment feels unreal in the best way.</p>
+                </div>
+                <picture>
+                    <source media="(max-width: 800px)" srcset="./assets/svg/hero-left-vector-mobile.svg">
+                    <img class="hero-vector" src="./assets/svg/hero-left-vector.svg" alt="">
+                </picture>
+                <img class="cappadonia-circle" src="./assets/svg/cappadonia-turkey-circle.svg" alt="">
             </div>
-            <picture>
-                <source media="(max-width: 800px)" srcset="./assets/svg/hero-left-vector-mobile.svg">
-                <img class="hero-vector" src="./assets/svg/hero-left-vector.svg" alt="">
-            </picture>
-            <img class="cappadonia-circle" src="./assets/svg/cappadonia-turkey-circle.svg" alt="">
         </section>
 
         <section class="vertical-section highlights-section">
@@ -72,19 +74,20 @@
                         facere expedita aperiam nihil, culpa ratione sunt rerum aspernatur veritatis vitae eveniet in
                         suscipit ea velit officia?</p>
                 </details>
-                 <details>
+                <details>
                     <summary>How do I plan, document, and share my travels?</summary>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim esse, accusamus deserunt, aliquid
                         facere expedita aperiam nihil, culpa ratione sunt rerum aspernatur veritatis vitae eveniet in
                         suscipit ea velit officia?</p>
                 </details>
-                 <details>
-                    <summary>How can brands, companies, or fellow creators collaborate with me or get in touch?</summary>
+                <details>
+                    <summary>How can brands, companies, or fellow creators collaborate with me or get in touch?
+                    </summary>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim esse, accusamus deserunt, aliquid
                         facere expedita aperiam nihil, culpa ratione sunt rerum aspernatur veritatis vitae eveniet in
                         suscipit ea velit officia?</p>
                 </details>
-                 <details>
+                <details>
                     <summary>How can readers support this blog and the work behind it?</summary>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim esse, accusamus deserunt, aliquid
                         facere expedita aperiam nihil, culpa ratione sunt rerum aspernatur veritatis vitae eveniet in
@@ -93,8 +96,50 @@
             </div>
         </section>
 
-        <section class="home-contact">
+        <section class="vertical-section contact-section">
+            <div class="section-title">
+                <div class="section-title-headline">
+                    <img src="/assets/icons/person_pin_yellow.svg" alt="A yellow silhouette of a person.">
+                    <h2>Contact form</h2>
+                </div>
 
+                <div class="contact-form-title-text">
+                    <p>Have a question or an idea to collaborate?</p>
+                    <p>Get in touch—I’d love to hear from you and explore how we can work together.</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <div class="contact-input-fields-row">
+                    <div class="input-field input-field-half-width">
+                        <p>What's your name?</p>
+                        <hr>
+                    </div>
+                    <div class="input-field input-field-half-width">
+                        <p>What's your email?</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="contact-input-fields-row">
+                    <div class="input-field input-field-whole-width">
+                        <p>How can I help?</p>
+                        <hr>
+                    </div>
+                </div>
+
+                <div class="contact-acception">
+                    <div class="acception-checkbox">
+                        <input type="checkbox">
+                        <p>
+                            I've read the <strong class="strong-green">privacy policy</strong> and agree to the
+                            processing of my data as
+                            outlined.
+                        </p>
+                    </div>
+
+                    <button class="send-contact-form-button">Send</button>
+                </div>
+            </div>
         </section>
     </main>
 
