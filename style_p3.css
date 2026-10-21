@@ -48,6 +48,12 @@
     }
 }
 
+@media (min-width: 1281px) {
+    body>header.primary-green-background {
+        padding-inline: max(120px, calc(50% - 600px));
+    }
+}
+
 .introduce_reading {
     height: auto;
     width: 100%;
@@ -72,6 +78,23 @@
     padding-bottom: 32px;
 }
 
-.pro_text>li {
- 
+.article-intro-video {
+    flex-wrap: wrap;
+}
+
+.article-intro-video>.article-description {
+    width: 100%;
+    flex-shrink: 0;
+    font-family: "Palanquin", sans-serif;
+    font-size: clamp(16px, 1.5vw, 24px);
+    line-height: 1.2;
+    color: #3d3d3d;
+}
+
+.introduce_reading .unsorted_list ul {
+    padding-left: 32px;
+}
+
+.introduce_reading .unsorted_list li {
+    list-style: disc outside;
 }
