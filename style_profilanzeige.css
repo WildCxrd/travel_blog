@@ -69,6 +69,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 40px;
+    width: calc(100% - 296px);
     max-width: 902px;
 }
 
@@ -162,6 +163,10 @@ body {
         gap: 32px;
     }
 
+    .article-title {
+        width: 100%;
+    }
+
     .article-info {
         flex-wrap: wrap;
     }
@@ -169,14 +174,20 @@ body {
     .author-card {
         width: 100%;
     }
+
+    .author-text {
+        text-align: center;
+    }
 }
 
 
 /*== HANDY bis 767 px: Hauptbereich + Article Intro ==*/
+/* min(): höchstens der Figma-Wert (bei 375 px). Unter 375 px wird alles
+   im gleichen Verhältnis kleiner, damit die Zeilen wie in Figma umbrechen. */
 @media screen and (max-width: 767px) {
 
     .main-content {
-        padding: 40px 16px;
+        padding: 40px min(16px, 4.26vw);
     }
 
     .article-title {
@@ -184,22 +195,38 @@ body {
     }
 
     .subtitle {
-        font-size: 1.25rem;
+        font-size: min(1.25rem, 5.33vw);
     }
 
     .article-title h1 {
-        font-size: 2rem;
+        font-size: min(2.5rem, 10.66vw);
     }
 
     .intro-text {
-        font-size: 1.125rem;
+        font-size: min(1.125rem, 4.8vw);
     }
 
     .article-info {
-        gap: 16px;
+        gap: min(16px, 4.26vw);
     }
 
     .info-item {
-        width: 45%;
+        font-size: min(1rem, 4.26vw);
+    }
+
+    .author-card {
+        padding: 16px min(8px, 2.13vw);
+    }
+
+    .author-name {
+        font-size: min(1rem, 4.26vw);
+    }
+
+    .author-role {
+        font-size: min(1rem, 4.26vw);
+    }
+
+    .author-text {
+        font-size: min(1rem, 4.26vw);
     }
 }
