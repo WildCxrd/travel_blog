@@ -1,3 +1,37 @@
+.section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 32px;
+}
+
+.section-title>p {
+    font-family: 'Palanquin';
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.section-title-headline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.section-title-headline>img {
+    height: 48px;
+    width: 48px;
+}
+
+.section-title-headline>h2 {
+    font-family: 'Arima';
+    font-weight: bold;
+    font-size: 3.25rem;
+    color: rgba(78, 164, 135, 1);
+}
+
 .home-hero {
     height: 515px;
 
@@ -34,34 +68,70 @@
     left: 430px;
 }
 
-.home-highlights {
+.vertical-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 88px;
 
     padding: 120px max(calc(50% - 720px), 120px);
 }
 
-.highlights-headline {
+.highlights-section {
+    gap: 88px;
+}
+
+.faq-section {
+    gap: 48px;
+}
+
+.details-panel {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
 
-    font-family: 'Arima';
-    color: rgba(78, 164, 135, 1);
+    gap: 32px;
+}
+
+.details-panel>details {
+    width: clamp(335px, 1200px, 100%);
+
+    background-color: rgba(241, 201, 83, 1);
+
+    padding: 16px 14px;
+    border-radius: 12px;
+}
+
+.details-panel>details>summary {
+    font-family: 'Palanquin';
+    font-weight: bold;
+    font-size: 1.5rem;
+
+    list-style-type: none;
+
+    color: rgba(84, 55, 13, 1);
 
     display: flex;
+    justify-content: space-between;
     gap: 8px;
 }
 
-.highlights-headline>img {
-    height: 48px;
-    width: 48px;
+.details-panel>details>summary::after {
+    content: url("./assets/icons/arrow_forward_ios_down.svg");
 }
 
-.home-faq {}
+.details-panel>details[open]>summary::after {
+    content: url("./assets/icons/arrow_forward_ios_up.svg");
+}
+
+.details-panel>details>p {
+    font-family: 'Palanquin';
+    font-weight: 500;
+    font-size: 1rem;
+
+    background-color: white;
+    padding: 4px 10px;
+    border-radius: 5px;
+}
 
 @media screen and (max-width: 800px) {
     .hero-title {
@@ -74,5 +144,24 @@
 
         top: 200px;
         left: 75px;
+    }
+
+    .section-title-headline>h2 {
+        font-size: 2.5rem;
+    }
+
+    .section-title-headline>img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .details-panel>details>summary {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .section-title>p {
+        display: none;
     }
 }
