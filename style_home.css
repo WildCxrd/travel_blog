@@ -1,0 +1,31 @@
+.home-hero {
+    height: 515px;
+
+    background-image: url("./assets/img/hero-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home-highlights {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 88px;
+
+    padding: 120px max(calc(50% - 720px), 120px);
+}
+
+.highlights-headline {
+    font-family: 'Arima';
+    color: rgba(78, 164, 135, 1);
+
+    display: flex;
+    gap: 8px;
+}
+
+.highlights-headline>img {
+    height: 48px;
+    width: 48px;
+}
+
+.home-faq {}
