@@ -63,7 +63,7 @@
 }
 
 .introduce_reading>p,
-.introduce_reading>li {
+.introduce_reading .unsorted_list li {
     font-size: clamp(16px, 1.7vw, 24px);
     line-height: 1.4;
 }
