@@ -146,3 +146,19 @@ footer figure {
         padding: 30px 24px;
     }
 }
+
+@media screen and (max-width: 380px) {
+    .social-media-icons>ul {
+        gap: 4px;
+    }
+
+    .social-media-icon-rectangular {
+        height: 18px;
+        width: 18px;
+    }
+
+    .youtube-icon {
+        height: 18px;
+        width: 27px;
+    }
+}
