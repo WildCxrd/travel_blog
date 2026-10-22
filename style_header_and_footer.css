@@ -11,20 +11,21 @@ header {
     align-items: center;
     gap: 100px;
 
-    padding: 32px max(calc(50% - 720px), 120px);
+    padding: 32px max(calc(50% - 600px), 120px);
 }
 
 header a {
     font-family: 'Arima';
     font-weight: bold;
     font-size: 1.5rem;
-
     color: white;
+    text-decoration: none;
 }
 
 nav>ul {
     display: flex;
     gap: 72px;
+    list-style: none;
 }
 
 footer {
@@ -33,7 +34,7 @@ footer {
     display: flex;
     justify-content: space-between;
 
-    padding: 60px max(calc(50% - 720px), 120px);
+    padding: 60px max(calc(50% - 600px), 120px);
     margin-bottom: 92px;
 }
 

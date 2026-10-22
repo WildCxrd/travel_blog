@@ -9,27 +9,24 @@
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-section {
+.share-section {
     display: flex;
     align-items: center;
     flex-direction: column;
+    gap: 24px;
 }
 
-section>p {
+.share-section>p {
     width: 455px;
     color: rgba(84, 55, 13, 1);
     font-family: 'Arima';
     font-weight: 500;
-    font-style: normal;
     font-size: 24px;
-    line-height: 120%;
-    letter-spacing: 0%;
     text-align: center;
 }
 
 .share-row {
     width: 450px;
-    height: 30px;
 
     display: flex;
     align-items: center;
@@ -50,9 +47,6 @@ section>p {
     background-color: rgba(78, 164, 135, 1);
     display: flex;
     align-items: center;
-    position: relative;
-    top: 32px;
-
 }
 
 .button>img {
@@ -65,7 +59,7 @@ section>p {
     text-decoration: none;
     color: rgba(241, 201, 83, 1);
     font-family: 'Arima';
-    font-weight: 400;
+    font-weight: 700;
     font-style: regular;
     font-size: 24px;
     line-height: 120%;
@@ -74,17 +68,26 @@ section>p {
 
 @media screen and (min-width: 320px) and (max-width: 1439px) {
 
-    section>p {
-        width: 335px;
+    .share-section>p {
+        width: min(335px, 100%);
         font-size: 17px;
     }
 
     .share-row {
-        width: 310px;
+        width: min(310px, 100%);
     }
 
     .share-row>img {
         rotate: 0grad;
+    }
+
+}
+
+/* Handy: Abstand zum Footer wie in Figma (zusammen mit 40px Padding von .main-content) */
+@media screen and (max-width: 767px) {
+
+    .share-section {
+        padding-bottom: 56px;
     }
 
 }
@@ -97,6 +100,11 @@ section>p {
 
     .image {
         display: block;
+    }
+
+    /* Button auf Höhe der Pfeilspitze (ersetzt position + top) */
+    .button {
+        margin-top: 64px;
     }
 
 }
