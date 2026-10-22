@@ -9,11 +9,11 @@
 }
 .slider_b_element {
     display: block;
-    width: 28%;
+    width: 32%;
     height: auto;
-    flex: 0 0 28%;
+    flex: 0 0 32%;
 
-    margin-left: -10%;
+    margin-left: -15%;
 
     transition: transform 250ms ease-in-out;
 }
