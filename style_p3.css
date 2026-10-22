@@ -99,15 +99,7 @@
     list-style: disc outside;
 }
 
-
-
-
-
-
-
-
-
-
+/* -------------------------------------------------------------------------------- */
 
 
 .share-section {
@@ -118,9 +110,9 @@
     margin: 72px auto 80px;
 }
 
-/* Beschreibungstext */
 
-.share-section > p {
+
+.share-section>p {
     width: min(100%, 455px);
     color: #54370D;
     font-family: 'Arima', sans-serif;
@@ -130,7 +122,6 @@
     text-align: center;
 }
 
-/* Pfeil und Share Button */
 
 .share-section .share-row {
     width: min(100%, 450px);
@@ -141,19 +132,16 @@
     gap: 50px;
 }
 
-/* Pfeil Desktop */
 
 .share-section .image {
     display: block;
 }
 
-/* Pfeil für kleinere Bildschirme */
 
 .share-section .image1 {
     display: none;
 }
 
-/* Grüner Button */
 
 .share-section .button {
     height: 45px;
@@ -168,17 +156,14 @@
     top: 32px;
 }
 
-/* Share Icon */
 
-.share-section .button > img {
+.share-section .button>img {
     width: 32px;
     height: 32px;
     border-radius: 6px;
 }
 
-/* Share Schrift */
-
-.share-section .button > a {
+.share-section .button>a {
     text-decoration: none;
     color: #F1C953;
     font-family: 'Arima', sans-serif;
@@ -188,36 +173,16 @@
     letter-spacing: 0.05em;
 }
 
-.tip_feature .pro_text > li {
-    list-style-type: decimal;
-    list-style-position: outside;
-}
+/* --------------------------------------------------------------------------------- */
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* ----------------------------------media screens--------------------------------------------------- */
 
 
 @media screen and (max-width: 1439px) {
 
-    .share-section > p {
+    .share-section>p {
         width: min(100%, 335px);
         font-size: 17px;
     }
@@ -241,6 +206,3 @@
         margin: 56px auto 64px;
     }
 }
-
-
-

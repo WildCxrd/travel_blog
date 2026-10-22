@@ -14,7 +14,6 @@
     src: url('./assets/fonts/palanquin-v17-latin-700.woff2') format('woff2');
 }
 
-
 .tip_feature {   
     position: relative;
     padding-top: 65px;       
@@ -50,7 +49,8 @@
 .ordered_list {
     background-color: #4EA48733;
     border-radius: 15px;
-    max-width: fit-content;
+    width: 100%;
+    box-sizing: border-box;
     padding-left: 47px;
 }
 
@@ -61,6 +61,7 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 120%;
+    margin: 0;
     padding: 30px;
 }
 
@@ -69,8 +70,23 @@
     font-family: 'Palanquin', sans-serif;
     font-weight: 700;
     font-style: bold;
-    font-size: 24px;
+    font-size: inherit;
     line-height: 120%;
     text-decoration: none;
 }
 
+.tip_feature .pro_text > li {
+    list-style-type: decimal;
+    list-style-position: outside;
+}
+.tip_feature .icon-tip p {
+    margin: 0;
+}
+
+@media screen and (max-width: 1279px) {
+
+    .tip_feature .icon-tip {
+        left: 0;
+    }
+
+}
