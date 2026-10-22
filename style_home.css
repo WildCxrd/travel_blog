@@ -131,7 +131,7 @@
 }
 
 .highlights-carousel input {
-    z-index: 2;
+    z-index: 3;
 
     height: 28px;
     width: 28px;
@@ -143,10 +143,13 @@
     cursor: pointer;
 
     margin: 40px 11px;
+
+    transition: all 255ms;
 }
 
 .highlights-carousel input[value="carousel"]:checked~div>.beaches-slide {
     opacity: 100%;
+    z-index: 2;
 }
 
 .highlights-carousel input[value="carousel"]:checked {
@@ -157,6 +160,7 @@
 
 .highlights-carousel input[value="video"]:checked~div>.copenhagen-slide {
     opacity: 100%;
+    z-index: 2;
 }
 
 .highlights-carousel input[value="video"]:checked {
@@ -167,6 +171,7 @@
 
 .highlights-carousel input[value="graph"]:checked~div>.pattaya-slide {
     opacity: 100%;
+    z-index: 2;
 }
 
 .highlights-carousel input[value="graph"]:checked {
