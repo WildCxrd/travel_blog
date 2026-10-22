@@ -173,10 +173,6 @@
     letter-spacing: 0.05em;
 }
 
-/* --------------------------------------------------------------------------------- */
-
-
-
 /* ----------------------------------media screens--------------------------------------------------- */
 
 
@@ -205,4 +201,20 @@
     .share-section {
         margin: 56px auto 64px;
     }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+
+    .article-intro-video .subtitle {
+        font-size: clamp(20px, 3vw, 40px);
+    }
+
+    .article-intro-video .article-title h1 {
+        font-size: clamp(40px, 5vw, 64px);
+    }
+
+    .article-intro-video .intro-text {
+        font-size: clamp(18px, 2vw, 28px);
+    }
+
 }
