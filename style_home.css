@@ -186,10 +186,14 @@
     width: 100%;
     height: 100%;
 
+    display: flex;
+    flex-direction: column;
+
     position: absolute;
 
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: 0% 50%;
 
     border-top-right-radius: 100px;
     transition: all 255ms ease-in-out;
@@ -198,7 +202,7 @@
 }
 
 .highlights-slider-element-textbox {
-    width: 80%;
+    width: 73%;
 
     color: white;
 
@@ -211,7 +215,8 @@
     border-right: 1px solid white;
 
     padding: 16px 24px;
-    margin: 40px;
+    margin-top: 60px;
+    margin-left: 40px;
 }
 
 .highlights-slider-element-textbox>h3 {
@@ -232,7 +237,6 @@
 .beaches-slide {
     opacity: 0%;
     background-image: url("./assets/img/beaches_slide.jpg");
-    background-position: 0% 50%;
 }
 
 .copenhagen-slide {
@@ -421,6 +425,14 @@
     .details-panel>details>summary {
         font-size: 1rem;
     }
+
+    .highlights-slider-element-textbox>h3 {
+        font-size: 1.75rem;
+    }
+
+    .highlights-slider-element-textbox>p {
+        font-size: 1.25rem;
+    }
 }
 
 @media screen and (max-width: 426px) {
@@ -448,5 +460,15 @@
     .acception-checkbox>input {
         position: relative;
         top: 0px;
+    }
+
+    .highlights-slider-element {
+        align-items: center;
+    }
+
+    .highlights-slider-element-textbox {
+        width: 90%;
+        padding: 16px;
+        margin: 100px 0px 0px 0px;
     }
 }
