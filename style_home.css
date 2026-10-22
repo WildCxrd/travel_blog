@@ -1,3 +1,14 @@
+/* palanquin-dark-600 - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Palanquin Dark';
+    font-style: normal;
+    font-weight: 600;
+    src: url('./assets/fonts/palanquin-dark-v17-latin-600.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
 .section-title {
     display: flex;
     flex-direction: column;
@@ -128,7 +139,9 @@
     appearance: unset;
     background-color: white;
     border-radius: 50px;
-    
+
+    cursor: pointer;
+
     margin: 40px 11px;
 }
 
@@ -180,6 +193,40 @@
 
     border-top-right-radius: 100px;
     transition: all 255ms ease-in-out;
+
+    cursor: pointer;
+}
+
+.highlights-slider-element-textbox {
+    width: 80%;
+
+    color: white;
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+
+    word-wrap: break-word;
+
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+
+    padding: 16px 24px;
+    margin: 40px;
+}
+
+.highlights-slider-element-textbox>h3 {
+    font-family: 'Palanquin Dark';
+    font-weight: 600;
+    font-size: 3rem;
+    line-height: 100%;
+}
+
+.highlights-slider-element-textbox>p {
+    font-family: 'Palanquin';
+    font-size: 1.75rem;
+    line-height: 110%;
+
+    padding-top: 8px;
 }
 
 .beaches-slide {
