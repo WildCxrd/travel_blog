@@ -337,20 +337,20 @@
     gap: 60px;
 }
 
-.input-field-half-width {
-    width: 45%;
-}
-
-.input-field-whole-width {
-    width: 100%;
-}
-
 .input-field>hr {
     height: 0px;
     width: 100%;
     border: 1px solid;
 
     color: rgba(84, 55, 13, 1);
+}
+
+.input-field-half-width {
+    width: 45%;
+}
+
+.input-field-whole-width {
+    width: 100%;
 }
 
 .contact-acception {
@@ -448,6 +448,10 @@
         gap: 32px;
     }
 
+    .contact-form {
+        gap: 32px;
+    }
+
     .contact-form-title-text {
         display: none;
     }
@@ -474,5 +478,42 @@
         width: 90%;
         padding: 16px;
         margin: 100px 0px 0px 0px;
+    }
+}
+
+@media screen and (max-width: 371px) {
+    .home-hero {
+        margin-bottom: 40px;
+    }
+
+    .vertical-section {
+        gap: 44px;
+        padding: 0px 20px 40px 20px;
+    }
+
+    .highlights-slider-element-textbox>h3 {
+        font-size: 1.5rem;
+    }
+
+    .highlights-slider-element-textbox>p {
+        font-size: 1rem;
+    }
+
+    .section-title-headline>h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-title-headline>img {
+        height: 24px;
+        width: 24px;
+    }
+
+    .input-field {
+        font-size: 1rem;
+        gap: 40px;
+    }
+
+    .send-contact-form-button {
+        font-size: 1rem;
     }
 }
