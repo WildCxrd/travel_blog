@@ -90,7 +90,7 @@
     flex-direction: column;
     align-items: center;
 
-    padding: 120px;
+    padding: 120px 120px 0px 120px;
 }
 
 .highlights-section {
@@ -103,7 +103,6 @@
 
 .contact-section {
     gap: 56px;
-
     padding-bottom: 120px;
 }
 
@@ -242,7 +241,13 @@
 
 @media screen and (max-width: 800px) {
     .vertical-section {
-        padding: 80px 20px;
+        padding-top: 80px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .contact-section{
+        padding-bottom: 80px;
     }
 
     .hero-title {
@@ -276,7 +281,25 @@
         display: none;
     }
 
+    .contact-section {
+        gap: 32px;
+    }
+
     .contact-form-title-text {
         display: none;
+    }
+
+    .contact-input-fields-row {
+        flex-direction: column;
+        gap: 32px
+    }
+
+    .input-field-half-width {
+        width: 100%;
+    }
+
+    .acception-checkbox>input {
+        position: relative;
+        top: 0px;
     }
 }
