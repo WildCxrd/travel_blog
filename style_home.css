@@ -141,10 +141,12 @@
 
 .details-panel>details>summary::after {
     content: url("./assets/icons/arrow_forward_ios_down.svg");
+    cursor: pointer;
 }
 
 .details-panel>details[open]>summary::after {
     content: url("./assets/icons/arrow_forward_ios_up.svg");
+    cursor: pointer;
 }
 
 .details-panel>details>p {
@@ -246,7 +248,7 @@
         padding-right: 20px;
     }
 
-    .contact-section{
+    .contact-section {
         padding-bottom: 80px;
     }
 
