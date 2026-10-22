@@ -218,3 +218,14 @@
     }
 
 }
+body > main.main-content {
+    padding-bottom: 0;
+}
+@media screen and (min-width: 1281px) {
+
+    #video-container {
+        margin-top: 137px;
+        margin-bottom: 137px;
+    }
+
+}
