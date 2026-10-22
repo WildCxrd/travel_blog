@@ -216,6 +216,10 @@
     gap: 8px;
 }
 
+.acception-checkbox>input {
+    cursor: pointer;
+}
+
 .strong-green {
     color: rgba(78, 164, 135, 1);
 }
@@ -232,6 +236,8 @@
     border: 1px solid rgba(48, 48, 48, 0.5);
     border-radius: 40px;
     padding: 0px 24px;
+
+    cursor: pointer;
 }
 
 @media screen and (min-width: 1440px) {
