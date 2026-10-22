@@ -75,3 +75,57 @@
     }
 
 }
+
+.carousel-dots {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+
+    .carousel-dots {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin-top: 20px;
+    }
+
+    .carousel-dot {
+        width: 16px;
+        height: 16px;
+        padding: 0;
+        border: none;
+        border-radius: 50%;
+        background-color: #D1E7DE;
+        cursor: pointer;
+        display: block;
+    }
+
+    .carousel-dot.is-active {
+        width: 32px;
+        border-radius: 20px;
+        background-color: #4EA487;
+    }
+
+    .carousel-dot:focus-visible {
+        outline: 2px solid #4EA487;
+        outline-offset: 3px;
+    }
+
+    .carousel-section:has(.slider_b_element:target) .carousel-dot.is-active {
+        width: 16px;
+        border-radius: 50%;
+        background-color: #D1E7DE;
+    }
+
+    .carousel-section:has(#beach-1:target) .carousel-dot[href="#beach-1"],
+    .carousel-section:has(#beach-2:target) .carousel-dot[href="#beach-2"],
+    .carousel-section:has(#beach-3:target) .carousel-dot[href="#beach-3"],
+    .carousel-section:has(#beach-4:target) .carousel-dot[href="#beach-4"],
+    .carousel-section:has(#beach-5:target) .carousel-dot[href="#beach-5"] {
+        width: 32px;
+        border-radius: 20px;
+        background-color: #4EA487;
+    }
+
+}
