@@ -14,7 +14,7 @@ header {
     padding: 32px max(calc(50% - 600px), 120px);
 }
 
-header a {
+header>nav>ul a {
     font-family: 'Arima';
     font-weight: bold;
     font-size: 1.5rem;
