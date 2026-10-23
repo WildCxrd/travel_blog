@@ -42,10 +42,19 @@
 .slider_b_element:hover {
     position: relative;
     z-index: 2;
-    /*ausgewählte Karte targetiert > für FIgma animationstest*/
-    transform: perspective(250px) rotateY(0deg);
+    /*ausgewählte Karte targeted und scale seted > für FIgma animationstest*/
+    transform: perspective(250px) rotateY(0deg) scale(1.1);
     /* transform: translateY(-10px); ------------Hover nach oben abgeschaltet für > Figma animationstest---- */
 }
+
+/*importiert hover logik aus slider rotation > Figma animationstest*/
+.slider_b_element:hover~.slider_b_element{
+    background-color: gold;
+    transform: perspective(250px) rotateY(-20deg);
+    
+}
+
+
 
 @media screen and (max-width: 800px) {
 
