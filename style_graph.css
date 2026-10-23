@@ -1,270 +1,236 @@
-/* Article 03 / Graph – Gerüst nach dem Design Guide Desktop
-   Schriften (@font-face), * , body und .main-content stehen in style_profilanzeige.css
-   (wird im HTML zuerst geladen, diese Datei danach)
-   Header + Footer volle Breite, Inhalt max. 1440 px */
-
-
-/* ===== 1. HEADER ===== */
-.header {
-    /* volle Breite, grüner Hintergrund */
+/*=== Mein Share button ==*/
+/* arima-regular - latin */
+@font-face {
+    font-display: swap;
+    /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./assets/fonts/arima-v7-latin-regular.woff2') format('woff2');
+    /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-.header-content {
-    /* Contentbegrenzung max. 1440 px, Logo links, Navigation rechts */
-}
-
-.header-content>img {
-    /* Logo */
-}
-
-.nav-bar ul {
-    /* 3 Links nebeneinander: Highlights, FAQ, Contact */
-}
-
-.nav-bar a {
-    /* Schrift und Farbe der Links */
-}
-
-.nav-bar a:hover {
-    /* Hover-Effekt */
-}
-
-
-/* ===== Hauptbereich ===== */
-/* .main-content steht in style_profilanzeige.css (gilt für alle Seiten).
-   Abstand zwischen den Bereichen dort ergänzen, nicht hier ein zweites Mal. */
-
-.content-section {
-    /* gilt für alle Sektionen */
-}
-
-
-/* ===== 2. ARTICLE INTRO (aus style_profilanzeige.css übernommen) ===== */
-.article-intro {
+.share-section {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
     gap: 24px;
 }
 
-.article-title {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    width: calc(100% - 296px);
-    max-width: 902px;
-}
-
-.title-text {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.subtitle {
-    font-size: 2.5rem;
-    font-weight: 600;
-    color: rgba(78, 164, 135, 1);
-}
-
-.article-title h1 {
-    font-family: 'Arima';
-    font-size: 4rem;
-    font-weight: 700;
-    color: rgba(241, 201, 83, 1);
-}
-
-.intro-text {
-    font-size: 1.75rem;
+.share-section>p {
+    width: 455px;
     color: rgba(84, 55, 13, 1);
+    font-family: 'Arima';
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
 }
 
-.article-info {
+.share-row {
+    width: 450px;
+
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.image1 {
+    display: none;
+}
+
+.button {
+    height: 45px;
+    border-radius: 40px;
+    padding-left: 24px;
+    padding-right: 24px;
+    gap: 8px;
+    background-color: rgba(78, 164, 135, 1);
+    display: flex;
+    align-items: center;
+}
+
+.button>img {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+}
+
+.button>a {
+    text-decoration: none;
+    color: rgba(241, 201, 83, 1);
+    font-family: 'Arima';
+    font-weight: 700;
+    font-style: regular;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 5%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1439px) {
+
+    .share-section>p {
+        width: min(335px, 100%);
+        font-size: 17px;
+    }
+
+    .share-row {
+        width: min(310px, 100%);
+    }
+
+    .share-row>img {
+        rotate: 0grad;
+    }
+
+}
+
+/* Handy: Abstand zum Footer wie in Figma (zusammen mit 40px Padding von .main-content) */
+@media screen and (max-width: 767px) {
+
+    .share-section {
+        padding-bottom: 56px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .image1 {
+        display: none;
+    }
+
+    .image {
+        display: block;
+    }
+
+    /* Button auf Höhe der Pfeilspitze (ersetzt position + top) */
+    .button {
+        margin-top: 64px;
+    }
+
+}
+
+@media screen and (max-width: 1439px) {
+    .image {
+        display: none;
+    }
+
+    .image1 {
+        display: block;
+    }
+}
+
+
+
+/* ===== Hauptbereich Mein Code ===== */
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 88px;
+}
+
+
+
+/* ===== 2. ARTICLE INTRO: steht in style_profilanzeige.css ===== */
+
+/* Meta-Zeile in 2 Paaren: Umbruch nur zwischen den Paaren (wie Figma) */
+.info-row {
     display: flex;
     gap: 32px;
 }
 
-.info-item {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 1rem;
-    color: rgba(84, 55, 13, 1);
-}
-
-/* Autor-Karte */
-.author-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
-    width: 272px;
-    height: fit-content;
-    padding: 16px;
-    border-radius: 30px;
-    background-color: rgba(78, 164, 135, 0.2);
-    color: rgba(84, 55, 13, 1);
-}
-
-.avatar {
-    width: 120px;
-    height: 120px;
-}
-
-.author-name-box {
-    text-align: center;
-}
-
-.author-name {
-    font-family: 'Arima';
-    font-size: 1.125rem;
-    font-weight: 700;
-}
-
-.author-role {
-    font-family: 'Arima';
-    font-size: 1.125rem;
-    font-weight: 400;
-}
-
-.author-text {
-    font-size: 1rem;
-}
-
 
 /* ===== 3. TEXTBLÖCKE ===== */
-.text-block {
-    /* div um den Fließtext zwischen den Sektionen (kommt 3x vor), Abstand zwischen den 2 Absätzen */
-}
 
 .text-block>p {
-    /* Fließtext: Schrift, Größe, Farbe */
+    font-size: 1.5rem;
+    color: rgba(61, 61, 61, 1);
 }
 
 
 /* ===== 4. CHART SECTION (Rain periods in Pattaya) ===== */
 .chart-section {
-    /* Überschrift über der Grafik, beides mittig */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
 }
 
 .chart-section>h2 {
-    /* Überschrift */
+    font-family: 'Arima';
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgba(84, 55, 13, 1);
+    text-align: center;
 }
 
+/* Grafik */
 .chart {
-    /* Grafik: Breite, abgerundete Ecken (gilt auch für die Grafiken in .column).
-       Schatten aus Figma braucht box-shadow: noch nicht gelernt, Mentor fragen */
+    width: min(640px, 100%);
+    border-radius: 53px;
+    box-shadow: -2px 4px 11.6px rgba(0, 0, 0, 0.25);
 }
-
 
 /* ===== 5. ZWEI SPALTEN (Beach activities / Accommodation) ===== */
 .two-columns {
-    /* zwei Spalten nebeneinander */
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
 }
 
 .column {
-    /* eine Spalte: h2, Text, Grafik untereinander */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    width: 519px;
 }
 
 .column>h2 {
-    /* Überschrift der Spalte */
+    font-family: 'Arima';
+    font-size: 2rem;
+    font-weight: 600;
+    color: rgba(84, 55, 13, 1);
+    text-align: center;
 }
 
 .column>p {
-    /* Text der Spalte */
+    font-size: 1.5rem;
+    color: rgba(61, 61, 61, 1);
 }
 
 .column>.chart {
-    /* Grafik in der Spalte */
-}
-
-
-/* ===== 6. SHARE ===== */
-.share-section {
-    /* Text oben, darunter Pfeil + Button */
-}
-
-.share-section>p {
-    /* „Follow me for more content …“ */
-}
-
-.share-section>img {
-    /* Pfeil */
-}
-
-.share-button {
-    /* Button-Link: Icon + Text */
-}
-
-.share-button:hover {
-    /* Hover-Effekt */
-}
-
-.share-button>img {
-    /* Share-Icon */
-}
-
-.share-button>span {
-    /* Text „Share“ */
-}
-
-
-/* ===== 7. FOOTER ===== */
-.footer {
-    /* volle Breite, grüner Hintergrund */
-}
-
-.footer-content {
-    /* Contentbegrenzung max. 1440 px, links Copyright + Links, rechts Icons */
-}
-
-.footer-content>p {
-    /* © Travel Blog 2026 */
-}
-
-.footer-links {
-    /* Impressum, Cookie Preferences */
-}
-
-.footer-links>a {
-    /* Schrift und Farbe der Links */
-}
-
-.footer-icons {
-    /* 4 Social-Icons nebeneinander */
-}
-
-.footer-icons>a {
-    /* Link um das Icon */
-}
-
-.footer-icons img {
-    /* Icon-Größe */
+    width: 100%;
+    height: 471px;
+    object-fit: cover;
 }
 
 
 /* ===== TABLET bis 1280 px (Handy-Regeln weiter unten überschreiben) ===== */
 @media screen and (max-width: 1280px) {
 
-    /* 2. Article Intro: Titel und Autor-Karte untereinander */
-    .article-intro {
-        flex-direction: column;
-        gap: 32px;
+    /* 3. Textblöcke */
+    .text-block>p {
+        font-size: 1.25rem;
     }
 
-    .article-title {
-        width: 100%;
+    /* 4. Chart Section */
+    .chart-section>h2 {
+        font-size: 1.75rem;
     }
 
-    .article-info {
-        flex-wrap: wrap;
+    /* 5. Zwei Spalten: werden schmaler, Bildhöhe wächst mit */
+    .column>h2 {
+        font-size: 1.75rem;
     }
 
-    .author-card {
-        width: 100%;
+    .column>p {
+        font-size: 1.25rem;
     }
 
-    .author-text {
-        text-align: center;
+    .column>.chart {
+        height: 37vw;
     }
 }
 
@@ -272,46 +238,62 @@
 /* ===== HANDY bis 767 px ===== */
 @media screen and (max-width: 767px) {
 
-    /* 2. Article Intro
-       min(): höchstens der Figma-Wert (bei 375 px). Unter 375 px wird alles
-       im gleichen Verhältnis kleiner, damit die Zeilen wie in Figma umbrechen. */
-    .article-title {
-        gap: 24px;
-    }
-
-    .subtitle {
-        font-size: min(1.25rem, 5.33vw);
-    }
-
-    .article-title h1 {
-        font-size: min(2.5rem, 10.66vw);
-    }
-
-    .intro-text {
-        font-size: min(1.125rem, 4.8vw);
-    }
-
+    /* 2. Meta-Zeile: 2 Paare untereinander, ohne Abstand zwischen den Reihen */
     .article-info {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .info-row {
         gap: min(16px, 4.26vw);
     }
 
-    .info-item {
+    /* Abstand zwischen den Bereichen */
+    .main-content {
+        gap: 40px;
+    }
+
+    /* 3. Textblöcke */
+    .text-block>p {
         font-size: min(1rem, 4.26vw);
     }
 
-    .author-card {
-        padding: 16px min(8px, 2.13vw);
+    /* 4. Chart Section */
+    .chart-section {
+        gap: 16px;
     }
 
-    .author-name {
+    .chart-section>h2 {
+        font-size: min(1.25rem, 5.33vw);
+    }
+
+    .chart {
+        border-radius: min(24px, 6.4vw);
+    }
+
+    /* 5. Zwei Spalten: untereinander wie im Mobile-Entwurf */
+    .two-columns {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .column {
+        width: 100%;
+        gap: 16px;
+    }
+
+    .column>h2 {
+        font-size: min(1.25rem, 5.33vw);
+    }
+
+    .column>p {
         font-size: min(1rem, 4.26vw);
     }
 
-    .author-role {
-        font-size: min(1rem, 4.26vw);
-    }
-
-    .author-text {
-        font-size: min(1rem, 4.26vw);
+    .column>.chart {
+        height: 83vw;
     }
 }
+
+
+

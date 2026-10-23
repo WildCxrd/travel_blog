@@ -6,19 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Graph</title>
 
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style_profilanzeige.css">
     <link rel="stylesheet" href="style_graph.css">
+    <link rel="stylesheet" href="style_header_and_footer.css">
+    <link rel="stylesheet" href="style_menu_bar.css">
+
 
 </head>
 
 
 <body>
-    /* Header */
+
 
     <header class="primary-green-background">
-        <img class="blog-logo" src="./assets/icons/logo.svg"
-            alt="Das Logo des Travel Blog - die Erdkugel, die von einem Flugzeug gegen der Uhrzeigersinn umkreist wird.">
-
+        <a class="blog-logo" href="./index.html">
+            <img src="./assets/icons/logo.svg"
+                alt="Das Logo des Travel Blog - die Erdkugel, die von einem Flugzeug gegen der Uhrzeigersinn umkreist wird.">
+        </a>
         <nav>
             <ul>
                 <li>
@@ -37,7 +42,7 @@
 
     <main class="main-content">
 
-        /* Title Card / Article Intro */
+
         <section class="content-section article-intro">
             <div class="article-title">
                 <div class="title-text">
@@ -48,21 +53,25 @@
                 </div>
 
                 <div class="article-info">
-                    <div class="info-item">
-                        <img src="./assets/icons/calendar.svg" alt="">
-                        <span>Date: <time datetime="2026-04-02">02.04.2026</time></span>
+                    <div class="info-row">
+                        <div class="info-item">
+                            <img src="./assets/icons/calendar.svg" alt="">
+                            <span>Date: <time datetime="2026-04-02">02.04.2026</time></span>
+                        </div>
+                        <div class="info-item">
+                            <img src="./assets/icons/reading-time.svg" alt="">
+                            <span>Reading time: 7 min.</span>
+                        </div>
                     </div>
-                    <div class="info-item">
-                        <img src="./assets/icons/reading-time.svg" alt="">
-                        <span>Reading time: 7 min.</span>
-                    </div>
-                    <div class="info-item">
-                        <img src="./assets/icons/views.svg" alt="">
-                        <span>Read: 46</span>
-                    </div>
-                    <div class="info-item">
-                        <img src="./assets/icons/share-green.svg" alt="">
-                        <span>Shared: 23</span>
+                    <div class="info-row">
+                        <div class="info-item">
+                            <img src="./assets/icons/views.svg" alt="">
+                            <span>Read: 46</span>
+                        </div>
+                        <div class="info-item">
+                            <img src="./assets/icons/share-green.svg" alt="">
+                            <span>Shared: 23</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -82,7 +91,7 @@
 
         </section>
 
-        /* Textblock 1 */
+
         <div class="text-block">
             <p>Experience the vibrant energy of Pattaya, where golden beaches, delicious street food and lively
                 promenades create the perfect tropical escape. Explore colorful markets, cultural landmarks and
@@ -92,13 +101,13 @@
             </p>
         </div>
 
-        /* Chart Selection */
+
         <section class="content-section chart-section">
             <h2>Rain periods in Pattaya</h2>
             <img class="chart" src="./assets/img/graph-rain-periods.png" alt="Chart of the rain periods in Pattaya">
         </section>
 
-        /* Textblock 2 */
+
         <div class="text-block">
             <p>Pattaya’s rainy season usually lasts from May to October, with September and October often bringing the
                 heaviest rainfall. Showers can be intense but are usually short, leaving plenty of time to enjoy the
@@ -108,17 +117,14 @@
                 the rainy season an interesting time to discover Pattaya.</p>
         </div>
 
-        /* Beach activities · Accommodation */
+
         <section class="content-section two-columns">
             <div class="column">
                 <h2>Popular beach activities</h2>
                 <p>From jet skiing and parasailing to snorkeling and beach volleyball, Pattaya offers exciting
                     activities for every kind of traveler. Enjoy the warm sea, relax on golden sands or take a boat trip
                     to explore the beautiful nearby islands.</p>
-                <p>For a slower pace, rent a kayak, try stand-up paddleboarding or unwind with a refreshing drink by the
-                    shore. Whether you are looking for adventure, family fun or pure relaxation, Pattaya’s beaches offer
-                    the
-                    perfect setting for an unforgettable day by the sea.</p>
+
                 <img class="chart" src="./assets/img/graph-beach-activities.png"
                     alt="Pie chart of popular beach activities in Pattaya">
             </div>
@@ -133,27 +139,32 @@
             </div>
         </section>
 
-        /*== Textblock 3 ==*/
+
 
         <div class="text-block">
-            <p>Lorem ipsum dolor sit amet consectetur. Egestas a enim vestibulum malesuada. Ante in commodo porta
-                scelerisque turpis gravida semper.</p>
-            <p>Egestas a enim vestibulum malesuada. Ante in commodo porta scelerisque turpis gravida semper. Lorem
-                ipsum dolor sit amet consectetur.</p>
+            <p>Planning a beach vacation does not have to be expensive. A large part of your travel budget will usually
+                go toward transportation, accommodation, food, and activities.</p>
+            <p>Choosing the right place to stay can make a significant difference: hostels are ideal for budget
+                travelers, while hotels, resorts, and villas offer more comfort at a higher price. Compare your options
+                in advance, set a realistic daily budget, and leave some room for unexpected expenses. With thoughtful
+                planning, you can enjoy a relaxing and memorable trip without overspending.</p>
         </div>
-/*== Share ==*/
+
         <section class="content-section share-section">
             <p>Follow me for more content like this, and share the article with your friends!</p>
-            <img src="./assets/icons/arrow.svg" alt="">
-            <a class="share-button" href="#">
-                <img src="./assets/icons/share-yellow.svg" alt="">
-                <span>Share</span>
-            </a>
+            <div class="share-row">
+                <img class="image" src="./assets/img/vector_arrow.png" alt="Vektor Pfeil">
+                <img class="image1" src="./assets/img/arrow.png" alt="Krummer Pfeil">
+                <div class="button">
+                    <img src="./assets/img/frame_button.png" alt="Frame Button">
+                    <a href="https://www.LinkedIn.com/" target="_blank">Share</a>
+                </div>
+            </div>
         </section>
 
     </main>
 
-    /* Footer */
+
 
     <footer class="primary-green-background">
         <div class="footer-panel">
@@ -203,6 +214,27 @@
             </div>
         </div>
     </footer>
+
+    <nav class="menu-bar yellow-background">
+        <ul>
+            <li>
+                <img src="./assets/icons/home.svg" alt="Das Home-Symbol - der Umriss eines Hauses.">
+            </li>
+            <li>
+                <img src="./assets/icons/rocket_launch.svg" alt="Das Symbol einer fliegenden Rakete..">
+            </li>
+            <li>
+                <img src="./assets/icons/live_help.svg"
+                    alt="Das Symbol zur Live-Hilfe - ein Fragezeichen in einer Sprechblase mit abgerundeten Ecken.">
+            </li>
+            <li>
+                <img src="./assets/icons/person_pin.svg"
+                    alt="Das Person-Symbol - die Silhouette einer Person in einer Sprechblase mit abgerundeten Ecken.">
+            </li>
+        </ul>
+    </nav>
+
+
 </body>
 
 </html>

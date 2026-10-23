@@ -1,4 +1,6 @@
 .menu-bar {
+    z-index: 4;
+
     height: 92px;
     width: 100%;
 
