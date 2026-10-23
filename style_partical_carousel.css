@@ -31,6 +31,8 @@
     margin-left: -15%;
 
     transition: transform 250ms ease-in-out;
+    /* ---------------------Perspektive geändert um 20° > Figma Animationstest ----------------------*/
+    transform: perspective(600px) rotateY(20deg);
 }
 
 .slider_b_element:first-child {
@@ -40,8 +42,24 @@
 .slider_b_element:hover {
     position: relative;
     z-index: 2;
-    transform: translateY(-10px);
+    /*ausgewählte Karte targeted und scale seted > für FIgma animationstest*/
+
+    transform: none;
+
+    /* transform: translateY(-10px); ------------Hover nach oben abgeschaltet für > Figma animationstest---- */
 }
+
+/*importiert hover logik aus slider rotation > Figma animationstest*/
+
+.slider_b_element:hover~.slider_b_element {
+    transform: perspective(600px) rotateY(-20deg) translateX(60px);
+
+}
+
+.slider_b_element:has(~.slider_b_element:hover) {
+    transform: perspective(600px) rotateY(20deg) translateX(-120px);
+}
+
 
 @media screen and (max-width: 800px) {
 
@@ -126,6 +144,29 @@
         width: 32px;
         border-radius: 20px;
         background-color: #4EA487;
+    }
+
+}
+
+@media screen and (min-width: 801px) {
+
+    .carousel-heading {
+        margin-bottom: 60px;
+    }
+
+    .slider_b_element:hover~.slider_b_element {
+        transform: perspective(600px) rotateY(-20deg) translateX(120px);
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .slider_b_element,
+    .slider_b_element:hover,
+    .slider_b_element:hover~.slider_b_element,
+    .slider_b_element:has(~ .slider_b_element:hover) {
+        transform: none;
     }
 
 }
