@@ -44,7 +44,7 @@
     z-index: 2;
     /*ausgewählte Karte targeted und scale seted > für FIgma animationstest*/
 
-    transform: perspective(600px) rotateY(0deg) scale(1.1);
+    transform: none;
 
     /* transform: translateY(-10px); ------------Hover nach oben abgeschaltet für > Figma animationstest---- */
 }
