@@ -57,7 +57,7 @@
 }
 
 .slider_b_element:has(~.slider_b_element:hover){
-    transform: perspective(250px) rotateY(20deg) translateX(-20px);
+    transform: perspective(250px) rotateY(20deg) translateX(-80px);
 }
 
 
