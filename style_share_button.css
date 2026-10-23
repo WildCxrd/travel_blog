@@ -9,169 +9,119 @@
     /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
-.share-section {
+.share-button-panel {
+    width: min(490px, 100%);
+
+    position: relative;
+
     display: flex;
-    align-items: center;
     flex-direction: column;
-    gap: 24px;
+    align-items: center;
+    gap: 48px;
 }
 
-.share_button {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.share-section>p {
-    width: 455px;
-    color: rgba(84, 55, 13, 1);
+.share-button-panel>p {
     font-family: 'Arima';
     font-weight: 500;
-    font-size: 24px;
-    text-align: center;
-}
+    font-size: 1.5rem;
 
-.share_button>p {
-    width: 455px;
     color: rgba(84, 55, 13, 1);
-    font-family: 'Arima';
-    font-weight: 500;
-    font-style: normal;
-    font-size: 24px;
+
     line-height: 120%;
     letter-spacing: 0%;
     text-align: center;
 }
 
-.share-row {
-    width: 450px;
-
-    display: flex;
-    align-items: center;
-    gap: 50px;
-}
-
-
-.image1 {
+.share-button-arrow-web {
     display: none;
+    position: absolute;
+
+    top: 50px;
+    left: 10px;
 }
 
-.image1_1 {
+.share-button-arrow-mobile {
     display: none;
+    position: absolute;
+
+    top: 50px;
+    left: 5px;
 }
 
-.button {
-    height: 45px;
+.share-button {
     border-radius: 40px;
     padding-left: 24px;
     padding-right: 24px;
-    gap: 8px;
+
     background-color: rgba(78, 164, 135, 1);
     display: flex;
     align-items: center;
-}
-.button_picture {
-    height: 45px;
-    border-radius: 40px;
-    padding-left: 24px;
-    padding-right: 24px;
     gap: 8px;
-    background-color: rgba(78, 164, 135, 1);
-    display: flex;
-    align-items: center;
-    position: relative;
-    top: 32px;
 
+    padding: 10px 24px;
 }
 
-.button>img {
+.share-button>img {
     width: 32px;
     height: 32px;
     border-radius: 6px;
 }
 
-.button_picture>img {
-    width: 32px;
-    height: 32px;
-    border-radius: 6px;
-}
-
-.button>a {
-    text-decoration: none;
-    color: rgba(241, 201, 83, 1);
+.share-button>a {
     font-family: 'Arima';
-    font-weight: 700;
-    font-style: regular;
-    font-size: 24px;
+    font-style: bold;
+    font-size: 1.5rem;
+    color: rgba(241, 201, 83, 1);
+
+    text-decoration: none;
+
     line-height: 120%;
     letter-spacing: 5%;
-}
-
-.button_picture>a {
-    text-decoration: none;
-    color: rgba(241, 201, 83, 1);
-    font-family: 'Arima';
-    font-weight: 700;
-    font-style: regular;
-    font-size: 24px;
-    line-height: 120%;
-    letter-spacing: 5%;
-}
-
-@media screen and (min-width: 320px) and (max-width: 1439px) {
-
-    .share-section>p {
-        width: min(335px, 100%);
-        font-size: 17px;
-    }
-
-     .share_button>p {
-        width: 335px;
-        font-size: 17px;
-    }
-
-    .share-row {
-        width: min(310px, 100%);
-    }
-
-    .share-row>img {
-        rotate: 0grad;
-    }
-
 }
 
 /* Handy: Abstand zum Footer wie in Figma (zusammen mit 40px Padding von .main-content) */
-@media screen and (max-width: 767px) {
-
+/* @media screen and (max-width: 767px) {
     .share-section {
         padding-bottom: 56px;
     }
+} */
 
-}
-
-@media screen and (min-width: 1440px) {
-
-    .image1_1 {
-        display: none;
-    }
-
-    .image1 {
+@media screen and (min-width: 801px) {
+    .share-button-arrow-web {
         display: block;
     }
 
-    /* Button auf Höhe der Pfeilspitze (ersetzt position + top) */
-    .button {
-        margin-top: 64px;
+    .share-button-arrow-mobile {
+        display: none;
     }
-
 }
 
-@media screen and (max-width: 1439px) {
-    .image1 {
+@media screen and (max-width: 800px) {
+    .share-button-arrow-web {
         display: none;
     }
 
-    .image1_1 {
+    .share-button-arrow-mobile {
         display: block;
+    }
+}
+
+@media screen and (max-width: 535px) {
+    .share-button-panel {
+        width: 340px;
+    }
+
+    .share-button-panel>p {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .share-button-panel {
+        width: 100%;
+    }
+
+    .share-button-panel>p {
+        font-size: 16px;
     }
 }
