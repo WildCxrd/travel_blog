@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+.intro-text {
+    font-size: 2rem;
+}
+
 .text_section {
     padding-bottom: 65px;
     padding-top: 65px;
