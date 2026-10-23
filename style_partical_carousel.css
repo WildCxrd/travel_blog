@@ -32,7 +32,7 @@
 
     transition: transform 250ms ease-in-out;
     /* ---------------------Perspektive geändert um 20° > Figma Animationstest ----------------------*/
-    transform: perspective(250px) rotateY(20deg); 
+    transform: perspective(600px) rotateY(20deg); 
 }
 
 .slider_b_element:first-child {
@@ -44,7 +44,7 @@
     z-index: 2;
     /*ausgewählte Karte targeted und scale seted > für FIgma animationstest*/
 
-    transform: perspective(250px) rotateY(0deg) scale(1.1);
+    transform: perspective(600px) rotateY(0deg) scale(1.1);
 
     /* transform: translateY(-10px); ------------Hover nach oben abgeschaltet für > Figma animationstest---- */
 }
@@ -52,12 +52,12 @@
 /*importiert hover logik aus slider rotation > Figma animationstest*/
 
 .slider_b_element:hover~.slider_b_element{   
-    transform: perspective(250px) rotateY(-20deg) translateX(70px);
+    transform: perspective(600px) rotateY(-20deg) translateX(60px);
     
 }
 
 .slider_b_element:has(~.slider_b_element:hover){
-    transform: perspective(250px) rotateY(20deg) translateX(-80px);
+    transform: perspective(600px) rotateY(20deg) translateX(-120px);
 }
 
 
