@@ -174,18 +174,23 @@
 }
 
 /* ===== 5. ZWEI SPALTEN (Beach activities / Accommodation) ===== */
+
 .two-columns {
     display: flex;
     justify-content: space-between;
     gap: 24px;
+    width: 100%;
+    max-width: 1062px;
 }
+
 
 .column {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-between;
     gap: 24px;
-    width: 519px;
+    width: calc(50% - 12px);
 }
 
 .column>h2 {
