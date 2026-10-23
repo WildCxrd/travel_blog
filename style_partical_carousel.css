@@ -1,6 +1,7 @@
 .carousel-section {
     width: min(100%, 900px);
     margin-inline: auto;
+    margin-top: 80px;
 }
 
 .carousel-heading {
