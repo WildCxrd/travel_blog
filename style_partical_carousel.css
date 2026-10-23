@@ -40,7 +40,7 @@
 .slider_b_element:hover {
     position: relative;
     z-index: 2;
-    transform: translateY(-10px);
+    /* transform: translateY(-10px); Hover nach oben abgeschaltet für > Figma animationstest */
 }
 
 @media screen and (max-width: 800px) {
