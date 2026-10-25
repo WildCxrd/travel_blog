@@ -136,13 +136,13 @@ body {
 
 .author-name {
     font-family: 'Arima';
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
 .author-role {
     font-family: 'Arima';
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     font-weight: 400;
 }
 
@@ -182,8 +182,7 @@ body {
 
 
 /*== HANDY bis 767 px: Hauptbereich + Article Intro ==*/
-/* min(): höchstens der Figma-Wert (bei 375 px). Unter 375 px wird alles
-   im gleichen Verhältnis kleiner, damit die Zeilen wie in Figma umbrechen. */
+
 @media screen and (max-width: 767px) {
 
     .main-content {
@@ -195,15 +194,15 @@ body {
     }
 
     .subtitle {
-        font-size: min(1.25rem, 5.33vw);
+        font-size: min(1.25rem, 5.5vw);
     }
 
     .article-title h1 {
-        font-size: min(2.5rem, 10.66vw);
+        font-size: min(2.5rem, 11vw);
     }
 
     .intro-text {
-        font-size: min(1.125rem, 4.8vw);
+        font-size: min(1.125rem, 5vw);
     }
 
     .article-info {
@@ -211,7 +210,7 @@ body {
     }
 
     .info-item {
-        font-size: min(1rem, 4.26vw);
+        font-size: min(1rem, 4.2vw);
     }
 
     .author-card {
@@ -219,14 +218,14 @@ body {
     }
 
     .author-name {
-        font-size: min(1rem, 4.26vw);
+        font-size: min(1rem, 5vw);
     }
 
     .author-role {
-        font-size: min(1rem, 4.26vw);
+        font-size: min(1rem, 5vw);
     }
 
     .author-text {
-        font-size: min(1rem, 4.26vw);
+        font-size: min(1rem, 5vw);
     }
 }
