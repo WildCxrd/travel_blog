@@ -61,7 +61,9 @@
     .text_numbered_section {
         width: 100%;
     }
+}
 
+@media screen and (max-width: 767px) {
     .intro-text {
         font-size: 1rem;
     }
