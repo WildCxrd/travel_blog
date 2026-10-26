@@ -67,7 +67,6 @@
     .slider_b {
         width: min(85%, 360px);
         margin-left: auto;
-        margin-right: 3%;
 
         display: flex;
         justify-content: flex-start;
