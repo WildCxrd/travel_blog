@@ -272,6 +272,8 @@
 
     padding: 16px 14px;
     border-radius: 12px;
+
+    cursor: pointer;
 }
 
 .details-panel>details>summary {
@@ -290,12 +292,10 @@
 
 .details-panel>details>summary::after {
     content: url("./assets/icons/arrow_forward_ios_down.svg");
-    cursor: pointer;
 }
 
 .details-panel>details[open]>summary::after {
     content: url("./assets/icons/arrow_forward_ios_up.svg");
-    cursor: pointer;
 }
 
 .details-panel>details>p {
