@@ -62,11 +62,19 @@
         width: 100%;
     }
 
+    .intro-text {
+        font-size: 1rem;
+    }
+
+    .author-text {
+        font-size: 1rem;
+    }
+
     .text_section {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .text_numbered_section {
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
