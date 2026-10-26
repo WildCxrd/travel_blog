@@ -6,7 +6,7 @@
 
 .carousel-heading {
     font-family: 'Arima', serif;
-    font-size: clamp(16px, 2vw, 24px);
+    font-size: 2rem;
     font-weight: 500;
     color: #54370D;
     text-align: center;
@@ -164,6 +164,11 @@
 }
 
 @media screen and (max-width: 800px) {
+
+.carousel-heading{
+    font-weight: 600;
+    font-size: 1.25rem;
+}
 
     .slider_b_element,
     .slider_b_element:hover,
