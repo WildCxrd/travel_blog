@@ -240,7 +240,6 @@
     }
 }
 
-
 /* ===== HANDY bis 767 px ===== */
 @media screen and (max-width: 767px) {
 
@@ -251,7 +250,7 @@
     }
 
     .info-row {
-        gap: min(16px, 4.26vw);
+        gap: min(16px, 5vw);
     }
 
     /* Abstand zwischen den Bereichen */
@@ -261,7 +260,7 @@
 
     /* 3. Textblöcke */
     .text-block>p {
-        font-size: min(1rem, 4.26vw);
+        font-size: min(1rem, 5vw);
     }
 
     /* 4. Chart Section */
@@ -270,11 +269,16 @@
     }
 
     .chart-section>h2 {
-        font-size: min(1.25rem, 5.33vw);
+        font-size: min(1.25rem, 7vw);
     }
 
     .chart {
-        border-radius: min(24px, 6.4vw);
+        border-radius: min(24px, 7vw);
+    }
+
+    /* höchstens so breit wie bei 375 px, darunter schrumpft es mit */
+    .chart-section>.chart {
+        width: min(343px, 100%);
     }
 
     /* 5. Zwei Spalten: untereinander wie im Mobile-Entwurf */
@@ -289,17 +293,16 @@
     }
 
     .column>h2 {
-        font-size: min(1.25rem, 5.33vw);
+        font-size: min(1.25rem, 7vw);
     }
 
     .column>p {
-        font-size: min(1rem, 4.26vw);
+        font-size: min(1rem, 5vw);
     }
 
+    /* höchstens so groß wie bei 375 px (343 x 319), darunter schrumpft es mit */
     .column>.chart {
-        height: 83vw;
+        width: min(343px, 100%);
+        height: min(319px, 85vw);
     }
 }
-
-
-
